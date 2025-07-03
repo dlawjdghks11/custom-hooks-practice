@@ -1,11 +1,9 @@
-import { useInput } from "./hooks/useInput";
-import { maxLen } from "./utils/validators";
+import InputComponent from "components/InputComponent";
 
 function App() {
-  const name = useInput("Mr.", maxLen);
   return (
     <div>
-      <input {...name} />
+      <InputComponent />
     </div>
   );
 }
