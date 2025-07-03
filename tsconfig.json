@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es5", // JavaScript의 어떤 버전으로 컴파일할지 지정합니다. (ES5는 구형 브라우저 호환성을 위해)
+    "lib": ["dom", "dom.iterable", "esnext"], // TypeScript가 인식할 라이브러리 파일 목록입니다.
+    "allowJs": true, // JavaScript 파일도 TypeScript 프로젝트 내에서 허용합니다.
+    "skipLibCheck": true, // 타입 정의 파일(d.ts)에 대한 타입 검사를 건너뜁니다. (빌드 시간 단축)
+    "esModuleInterop": true, // CommonJS와 ES 모듈 간의 상호 운용성을 허용합니다. (import/export 관련)
+    "allowSyntheticDefaultImports": true, // 기본(default) 임포트가 없는 모듈에 대한 합성 기본 임포트를 허용합니다.
+    "strict": true, // 엄격한 타입 검사 모드를 활성화합니다. (권장)
+    "forceConsistentCasingInFileNames": true, // 파일 이름 대소문자 일관성을 강제합니다.
+    "noFallthroughCasesInSwitch": true, // switch 문에서 fall-through 케이스를 허용하지 않습니다.
+    "module": "esnext", // 모듈 시스템을 지정합니다. (최신 ES 모듈 구문)
+    "moduleResolution": "node", // 모듈 해석 방식을 Node.js처럼 합니다.
+    "resolveJsonModule": true, // .json 파일을 모듈처럼 임포트할 수 있게 합니다.
+    "isolatedModules": true, // 각 파일이 독립적인 모듈임을 확인합니다.
+    "noEmit": true, // TypeScript가 컴파일 후 JavaScript 파일을 생성하지 않습니다. (Babel이 이 역할을 대신함)
+    "jsx": "react-jsx", // JSX 코드를 React JSX 런타임으로 변환합니다. (중요!)
+    "incremental": true, // 증분 컴파일을 활성화하여 컴파일 속도를 높입니다.
+    "baseUrl": "src" // 'src' 폴더를 기본 경로로 설정하여 절대 경로 임포트를 쉽게 합니다.
+  },
+  "include": [
+    "src" // TypeScript가 컴파일할 파일들이 있는 디렉토리를 지정합니다.
+  ],
+  "exclude": [
+    "node_modules", // 컴파일에서 제외할 디렉토리입니다.
+    "build"
+  ]
+}
